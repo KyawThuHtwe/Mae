@@ -108,7 +108,7 @@ public class NotificationService extends Service {
                     title = Rabbit.zg2uni(title);
                     content = Rabbit.zg2uni(content);
                 }
-                if(year<=2020 && month<=11 & day<=8 && ans>=0){
+                if(year<=2020 && month<=11 & day<=8){
                     Intent notificationIntent = new Intent(getApplicationContext(), MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, notificationIntent, 0);
                     Notification notification = new NotificationCompat.Builder(getApplicationContext(), "10001")
